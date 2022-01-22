@@ -194,8 +194,8 @@ class OrderController extends Controller
         $orderTypeRelAccessoriesPost = isset($post['OrderTypeRelAccessories']) ? $post['OrderTypeRelAccessories'] : [];
 
         if ($this->request->isPost) {
-            out($orderTypeRelationPost);
-            out($orderTypeRelMaterialsPost);die;
+            //out($orderTypeRelationPost);
+            //out($orderTypeRelMaterialsPost);die;
             if($model->load($post) && $model->save()){
                 $orderID = $model->id;
                 $relCount = count($orderTypeRelationPost['type_id']);
