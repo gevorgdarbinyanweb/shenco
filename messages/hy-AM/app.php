@@ -34,6 +34,8 @@ return [
     'Update Reserve Type Material' => 'Խմբագրել դետալը',
     'Delete Reserve Type Material' => 'Հեռացնել դետալը',
     'Reserve Type' => 'Դետալի տեսակ',
+    'Reserve Accessories' => 'Աքսեսուարներ',
+    'Create Reserve Accessories' => 'Ավելացնել Աքսեսուար',
     'Code' => 'Կոդ',
     'Name' => 'Անվանում',
     'Unit' => 'Միավոր',

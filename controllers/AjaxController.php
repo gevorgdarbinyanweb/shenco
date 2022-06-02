@@ -87,7 +87,7 @@ class AjaxController extends Controller {
             $orderTypeRelMaterials = OrderTypeRelMaterials::find()->where(['order_type_rel_id'=>$orderRel->id])->all();
             foreach($orderTypeRelMaterials as $orderRelMaterial){
                 $reserveTypeMaterial = ReserveTypeMaterials::findOne($orderRelMaterial->reserve_type_material_id);
-                $currentCount = $reserveTypeMaterial->count - $orderRelMaterial->count;
+                $currentCount = ($reserveTypeMaterial->current_count == 0) ? $reserveTypeMaterial->count - $orderRelMaterial->count : $reserveTypeMaterial->current_count - $orderRelMaterial->count;
                 $reserveTypeMaterial->current_count = $currentCount;
                 $reserveTypeMaterial->current_total = $currentCount * $reserveTypeMaterial->price;
                 $reserveTypeMaterial->save();
