@@ -2,10 +2,14 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\web\View;
+use yii\web\JqueryAsset;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\ReserveMetals */
 /* @var $form yii\widgets\ActiveForm */
+
+$this->registerJsFile('@web/js/reserve-metals.js',['position' => View::POS_END, 'depends' => [JqueryAsset::className()]]);
 ?>
 
 <div class="reserve-metals-form">
@@ -16,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'unit')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'unit')->dropdownLIst(['մետր'=>'մետր','հատ'=>'հատ'],['prompt'=>'Միավոր'])?>
 
     <?= $form->field($model, 'count')->textInput() ?>
 
@@ -28,9 +32,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'current_total')->textInput() ?>
 
-    <?= $form->field($model, 'creator_id')->textInput() ?>
-
-    <?= $form->field($model, 'created_date')->textInput() ?>
+    <?= $form->field($model, 'creator_id')->hiddenInput()->label(false); ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

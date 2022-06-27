@@ -33,6 +33,9 @@ return [
     'Create Reserve Type Materials' => 'Ավելացնել Դետալ',
     'Update Reserve Type Material' => 'Խմբագրել դետալը',
     'Delete Reserve Type Material' => 'Հեռացնել դետալը',
+    'Create Reserve Type' => 'Ավելացնել Դետալի տեսակ',
+    'Update Reserve Type' => 'Փոփոխել Դետալի տեսակ',
+    'Update Reserve Type: {name}' => 'Փոփոխել Դետալի տեսակ: {name}',
     'Reserve Type' => 'Դետալի տեսակ',
     'Reserve Accessories' => 'Աքսեսուարներ',
     'Create Reserve Accessories' => 'Ավելացնել Աքսեսուար',
@@ -48,6 +51,9 @@ return [
     'Used Total' => 'Օգտագործված Արժեք',
 
     'Metal' => 'Երկաթ',
+    'Create Reserve Metals' => 'Ավելացնել Երկաթի տեսակ',
+    'Update Reserve Metals: {name}' => 'Փոփոխել Երկաթի տեսակ: {name}',
+    'Reserve Metals' => 'Երկաթ',
     'Accessories' => 'Աքսեսուարներ',
     'Working area' => 'Աշխ․ քառակուսի մետր',
     'Other Expenses' => 'Այլ ծախսեր',
@@ -68,8 +74,6 @@ return [
     'Finished' => 'Ավարտված',
 
 
-
-
-
+    'Are you sure you want to delete this item?' => 'Դուք համոզված ե՞ք։',
     'The requested page does not exist.' => 'էջը գոյություն չունի:',
 ];

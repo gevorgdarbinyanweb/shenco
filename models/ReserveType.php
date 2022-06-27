@@ -31,7 +31,7 @@ class ReserveType extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'created_date'], 'required'],
+            [['name'], 'required'],
             [['creator_id'], 'integer'],
             [['created_date'], 'safe'],
             [['name'], 'string', 'max' => 50],

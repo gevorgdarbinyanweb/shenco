@@ -35,7 +35,7 @@ class ReserveMetals extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'name', 'unit', 'count', 'price', 'total', 'current_count', 'current_total', 'created_date'], 'required'],
+            [['code', 'name', 'unit', 'count', 'price', 'total', 'current_count', 'current_total'], 'required'],
             [['code', 'creator_id'], 'integer'],
             [['name'], 'string'],
             [['count', 'price', 'total', 'current_count', 'current_total'], 'number'],

@@ -62,6 +62,10 @@ final class Calculator
         $this->getFrame();
         $this->getTavrikBelt();
         $this->getLeaves();
+        // out($this->frame);
+        // out($this->tavrik_belt);
+        // out($this->leaves);
+
         $this->metal = $this->frame + $this->tavrik_belt + $this->leaves;
         return $this;
     }
